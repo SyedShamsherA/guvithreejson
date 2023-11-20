@@ -1,0 +1,10 @@
+let obj1 = { name:"Person 1", age:5 };
+let obj2 = { age:5, name:"Person 1" };
+
+function areEqualJson(obj1, obj2){
+    const sortedString1 = JSON.stringify(obj1, Object.keys(obj1).sort());
+    const sortedString2 = JSON.stringify(ibj1, Object.keys(obj2).sort();)
+    return sortedString1 === sortedString2;
+}
+
+console.log(areEqualJson(obj1, obj2));
